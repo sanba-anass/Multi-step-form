@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/images/favicon-32x32.png"
+		/>
+		<title>Frontend Mentor | Multi-step form</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<main class="container">
+			<aside class="side-bar">
+				<ul>
+					<li>
+						<div class="circle-active circle">1</div>
+						<div class="text">
+							<div class="step">step 1</div>
+							<div class="title">your info</div>
+						</div>
+					</li>
+					<li>
+						<div class="circle">2</div>
+						<div class="text">
+							<div class="step">step 2</div>
+							<div class="title">select plan</div>
+						</div>
+					</li>
+					<li>
+						<div class="circle">3</div>
+						<div class="text">
+							<div class="step">step 3</div>
+							<div class="title">add-ons</div>
+						</div>
+					</li>
+					<li>
+						<div class="circle">4</div>
+						<div class="text">
+							<div class="step">step 4</div>
+							<div class="title">summary</div>
+						</div>
+					</li>
+				</ul>
+			</aside>
+			<section class="fade-in main-content">
+				<h2 class="step-title">Personal info</h2>
+				<div class="step-subtitle">
+					Please provide your name, email address, and phone number.
+				</div>
+				<form class="step-one-form">
+					<div class="input-labels">
+						<label for="name">Name</label>
+						<div class="hide err-text">this field is required</div>
+					</div>
+					<input
+						type="text"
+						name="name"
+						id="name"
+						placeholder="e.g. Stephen King"
+					/>
+					<div class="input-labels">
+						<label for="email">Email Address</label>
+						<div class="hide err-text">this field is required</div>
+					</div>
+					<input
+						type="email"
+						name="email"
+						id="email"
+						placeholder="e.g. stephenking@lorem.com"
+					/>
+					<div class="input-labels">
+						<label for="tel">Phone Number</label>
+						<div class="hide err-text">this field is required</div>
+					</div>
+					<input
+						type="tel"
+						name="phone"
+						id="phone"
+						placeholder="e.g. +1 234 567 890"
+					/>
+					<a id="next-home" class="next">Next Step</a>
+				</form>
+			</section>
+		</main>
+	</body>
+	<script src="./app.js"></script>
+</html>

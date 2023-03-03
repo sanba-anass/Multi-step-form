@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body class="plan-page">
+		<main class="container">
+			<aside class="side-bar">
+				<ul>
+					<li>
+						<div class="circle">1</div>
+						<div class="text">
+							<div class="step">step 1</div>
+							<div class="title">your info</div>
+						</div>
+					</li>
+					<li>
+						<div class="circle-active circle">2</div>
+						<div class="text">
+							<div class="step">step 2</div>
+							<div class="title">select plan</div>
+						</div>
+					</li>
+					<li>
+						<div class="circle">3</div>
+						<div class="text">
+							<div class="step">step 3</div>
+							<div class="title">add-ons</div>
+						</div>
+					</li>
+					<li>
+						<div class="circle">4</div>
+						<div class="text">
+							<div class="step">step 4</div>
+							<div class="title">summary</div>
+						</div>
+					</li>
+				</ul>
+			</aside>
+			<section class="fade-in main-content">
+				<h2 class="step-title">Select your plan</h2>
+				<div class="step-subtitle">
+					You have the option of monthly or yearly billing.
+				</div>
+				<section class="plan-section">
+					<div class="plans">
+						<div class="plan">
+							<img src="./assets/images/icon-arcade.svg" alt="" />
+							<div class="plan-title">Arcade</div>
+							<div class="plan-price">$9/mo</div>
+							<div class="hide free-text">2 months free</div>
+						</div>
+						<div class="plan">
+							<img src="./assets/images/icon-advanced.svg" alt="" />
+							<div class="plan-title">Advanced</div>
+							<div class="plan-price">$12/mo</div>
+							<div class="hide free-text">2 months free</div>
+						</div>
+						<div class="plan">
+							<img src="./assets/images/icon-pro.svg" alt="" />
+							<div class="plan-title">Pro</div>
+							<div class="plan-price">$15/mo</div>
+							<div class="hide free-text">2 months free</div>
+						</div>
+					</div>
+					<div class="toggle-container">
+						<div class="monthly">Monthly</div>
+						<button class="toggle-btn">
+							<div class="thumb"></div>
+						</button>
+
+						<div class="yearly">Yearly</div>
+					</div>
+					<div class="btns">
+						<a class="back" href="./index.html">Go Back</a>
+						<a id="next-plan" class="next">Next Step</a>
+					</div>
+				</section>
+			</section>
+		</main>
+		<script src="./app.js"></script>
+	</body>
+</html>
